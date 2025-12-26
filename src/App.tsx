@@ -1019,7 +1019,7 @@ interface ChatModalProps {
 function ChatModal({ isOpen, onClose }: ChatModalProps) {
   const [messages, setMessages] = useState<Array<{ type: 'bot' | 'user'; text: string }>>([])
   const [step, setStep] = useState(0)
-  const [userData, setUserData] = useState({ type: '', category: '', postcode: '' })
+  const [_userData, setUserData] = useState({ type: '', category: '', postcode: '' })
   const [inputValue, setInputValue] = useState('')
   const scrollRef = useRef<HTMLDivElement>(null)
 
